@@ -230,7 +230,6 @@
 
 .nav__body.mobile {
     top: 0;
-    z-index: 5;
 }
 
 .header__body {
@@ -254,6 +253,7 @@
 .nav__body {
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .nav__link {
@@ -570,6 +570,10 @@
 }
 
 .footer__link:hover {
+    background-color: #ff848a;
+}
+
+.footer__link.active {
     background-color: #ff848a;
 }
 
