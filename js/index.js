@@ -112,4 +112,9 @@ $(document).ready(function () {
         }
     });
 
+    // Логика блока question
+    $('.question__open').click(function() {
+        $(this).parents('.question__item').children('.question__info').stop().slideToggle();
+    })
+
 });
