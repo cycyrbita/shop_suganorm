@@ -429,40 +429,15 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: -70px;
 }
 
 .sostav__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex: 0 0 300px;
-    margin-top: 70px;
-}
-
-.sostav__item:nth-child(7) {
-    flex: 0 0 50%;
-}
-
-.sostav__item:nth-child(8) {
-    flex: 0 0 50%;
-}
-
-.sostav__item:nth-child(7) .sostav__item-box {
-    text-align: right;
-    align-items: flex-end;
-    padding-right: 35px;
-}
-
-.sostav__item:nth-child(8) .sostav__item-box {
-    padding-left: 35px;
-    text-align: left;
-    align-items: flex-start;
-}
-
-.sostav__clearBox {
-    width: 100%;
+    flex: 0 0 auto;
+    width: 33.333%;
+    padding: 15px;
 }
 
 .sostav__item-box {
@@ -645,10 +620,10 @@
 }
 
 .face__title {
-    max-width: 370px;
+    max-width: 470px;
     margin-bottom: 30px;
     font-size: 63px;
-    line-height: .9;
+    line-height: 1;
     color: #fff;
     text-transform: uppercase;
 }
@@ -1416,10 +1391,6 @@
         max-width: 335px;
     }
 
-    .sostav__item {
-        margin-top: 30px;
-    }
-
     .footer__item+.footer__item {
         margin-left: 15px;
     }
@@ -1629,10 +1600,7 @@
     }
 
     .sostav__item {
-        flex: 0 0 50%;
-        text-align: center;
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 50%;
     }
 
     .sostav__clearBox {
@@ -1650,10 +1618,6 @@
         text-align: center;
         align-items: center;
         padding: 0;
-    }
-
-    .sostav__list {
-        margin-top: -30px;
     }
 
     .footer__link {
@@ -1876,11 +1840,13 @@
     }
 
     .sostav__item {
-        flex: 0 0 100% !important;
+        padding-left: 0;
+        padding-right: 7.5px;
     }
 
-    .sostav__list {
-        margin-top: 0;
+    .sostav__item:nth-child(2n) {
+        padding-left: 7.5px;
+        padding-right: 0;
     }
 
     .footer__nav {
@@ -2363,6 +2329,25 @@
         margin-bottom: 15px;
         font-size: 28px;
         line-height: 1;
+    }
+
+    .sostav__media-border {
+        width: 100px;
+    }
+
+    .sostav__media {
+        width: 115px;
+        height: 115px;
+        margin-bottom: 10px;
+    }
+
+    .sostav__name {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .sostav__description {
+        font-size: 14px;
     }
 
 }
