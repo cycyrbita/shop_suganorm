@@ -15,15 +15,49 @@
     padding-bottom: 80px;
 }
 
-.section_sostav {
-    padding-top: 0 !important;
-}
-
 .section__title {
     margin-bottom: 30px;
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.section_introFace {
+    padding-bottom: 0;
+}
+
+.introFace {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 134px;
+    font-weight: 700;
+    color: #ff7c83;
+}
+
+.introFace__title {
+    flex: 0 0 auto;
+    width: 50%;
+    padding-right: 30px;
+    color: #ff7c83;
+    line-height: 1;
+    font-size: 134px;
+}
+
+.introFace mark {
+    color: #fed9b5;
+    background-color: transparent;
+}
+
+.introFace__title span {
+    display: block;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.introFace__media {
+    flex: 0 0 auto;
+    width: 50%;
 }
 
 .order__title {
@@ -296,7 +330,7 @@
 
 .discount p {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 700;
     color: #fff;
     margin-right: 30px;
@@ -620,9 +654,8 @@
 }
 
 .face__title {
-    max-width: 470px;
     margin-bottom: 30px;
-    font-size: 63px;
+    font-size: 53px;
     line-height: 1;
     color: #fff;
     text-transform: uppercase;
@@ -785,7 +818,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 85px 35px 50px;
+    padding: 85px 35px 30px;
     margin: 60px 0 0;
     background-color: #eaeaea;
 }
@@ -839,6 +872,23 @@
 .commits__star img {
     max-width: 33px;
     margin-right: 2px;
+}
+
+.commits__icon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.commits__icon a {
+    flex: 0 0 auto;
+    max-width: 40px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s opacity;
+}
+
+.commits__icon a:hover {
+    opacity: 1;
 }
 
 .professional {
@@ -1063,6 +1113,7 @@
 .online__body {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .online__subtitle {
@@ -1097,6 +1148,22 @@
     font-size: 24px;
     color: #070707;
     text-align: center;
+}
+
+.online__wrap-btn {
+    text-align: center;
+}
+
+.online__btn {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #018683;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .question__item+.question__item {
@@ -1168,6 +1235,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .form__price-old {
@@ -1175,7 +1243,7 @@
     margin-right: 20px;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     color: #000;
 }
 
@@ -1336,8 +1404,16 @@
         padding-bottom: 80px;
     }
 
+    .section_introFace {
+        padding-bottom: 0;
+    }
+
     .section__title {
         font-size: 40px;
+    }
+
+    .introFace__title {
+        font-size: 100px;
     }
 
     .order__item {
@@ -1543,8 +1619,20 @@
         padding-bottom: 60px;
     }
 
+    .section_introFace {
+        padding-bottom: 0;
+    }
+
     .section__title {
         font-size: 35px;
+    }
+
+    .introFace__title {
+        font-size: 82px;
+    }
+
+    .introFace__title span {
+        font-size: 38px;
     }
 
     .card__price {
@@ -1723,6 +1811,41 @@
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .section_introFace {
+        padding-bottom: 0;
+    }
+
+    .introFace {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .introFace__title {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .introFace__media {
+        width: 100%;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .introFace__media img {
+        max-height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .introFace__title {
+        font-size: 70px;
+    }
+
+    .introFace__title span {
+        font-size: 32px;
     }
 
     .card__media {
@@ -2068,6 +2191,14 @@
         padding-bottom: 20px;
     }
 
+    .introFace__title {
+        text-align: center;
+    }
+
+    .introFace__media {
+        margin-bottom: 30px;
+    }
+
     .section__title {
         margin-bottom: 20px;
         font-size: 28px;
@@ -2282,8 +2413,8 @@
 
     .online__media {
         padding: 10px;
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
         margin-bottom: 20px;
     }
 
@@ -2377,6 +2508,26 @@
     .discount p {
         margin-right: 0;
         margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .online__item {
+        width: 100%;
+    }
+
+    .online__body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .online__media {
+        width: 220px;
+        height: 220px;
+    }
+
+    .online__btn {
+        padding-right: 20px;
+        padding-left: 20px;
         font-size: 15px;
     }
 }
