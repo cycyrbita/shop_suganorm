@@ -654,8 +654,9 @@
 }
 
 .face__title {
+    max-width: 520px;
     margin-bottom: 30px;
-    font-size: 53px;
+    font-size: 48px;
     line-height: 1;
     color: #fff;
     text-transform: uppercase;
@@ -1116,10 +1117,15 @@
     justify-content: center;
 }
 
+.online__title {
+    text-align: center;
+}
+
 .online__subtitle {
     margin-bottom: 60px;
     font-size: 24px;
     font-weight: 700;
+    text-align: center;
 }
 
 .online__item {
