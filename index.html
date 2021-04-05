@@ -76,7 +76,7 @@
                         <div class="face__product"><img src="media/product.png" alt=""></div>
                     </div>
                     <div class="face__box">
-                        <div class="form aos-init aos-animate" data-aos="fade-left">
+                        <form class="form aos-init aos-animate" action="send.php" method="POST" >
                             <div class="form__title"><span>Заказать Dialine </span> прямо сейчас</div>
                             <div class="form__price">
                                 <div class="form__price-old">1580 mxn</div>
@@ -84,24 +84,22 @@
                             </div>
                             <div class="form__body">
                                 <label class="form__label">
-                                    <select class="form__field form__select">
-                                        <option selected="" value=""></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
+                                    <select class="form__field form__select" name="country">
+                                        <option value="Мексика">Мексика</option>
                                     </select>
                                     <span>Страна</span>
                                 </label>
                                 <label class="form__label">
-                                    <input type="text" class="form__field">
+                                    <input type="text" class="form__field" name="name">
                                     <span>Имя</span>
                                 </label>
                                 <label class="form__label">
-                                    <input type="text" class="form__field">
+                                    <input type="text" class="form__field" name="phone">
                                     <span>Телефон</span>
                                 </label>
                             </div>
-                            <button class="form__btn">Купить со скидкой</button>
-                        </div>
+                            <button class="form__btn" type="submit">Купить со скидкой</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -191,7 +189,6 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__body">
-                <a href="/" class="logo">Dia<span>line</span></a>
                 <div class="footer__nav">
                     <div class="footer__item">
                         <a href="index.html" class="footer__link active">Главная</a>

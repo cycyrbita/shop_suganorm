@@ -1,28 +1,4 @@
 $(document).ready(function () {
-    // $('.card__btn').click(function () {
-    //     var $thisitem = $(this).parents('.order__item'),
-    //         $count = $thisitem.children('.card__count').children('span').text(),
-    //         $bonus = $thisitem.children('.card__bonus').children('mark').children('span').text();
-    //     $price = $thisitem.children('.card__price').children('span').text();
-    //     $delivery = $thisitem.children('.card__delivery').children('.card__delivery-price').children('span').text();
-    //     $fullprice = $thisitem.children('.card__delivery').children('.card__full-price').children('span').text();
-
-    //     $('.form__title').text($thisitem.children('.card__name').text());
-
-    //     console.log($count, $bonus, $price, $delivery, $fullprice);
-
-    //     $('.form__price span').text($price);
-    //     $('.form__delivery span').text($delivery);
-    //     $('.form__fullprice span').text($fullprice);
-    //     $('.count_prod').val($count);
-    //     $('.bonus_prod').val($bonus);
-    //     $('.price_prod').val($price);
-    //     $('.delivery_prod').val($delivery);
-    //     $('.fullprice_prod').val($fullprice);
-
-    //     $('.modal_form').fadeIn();
-    //     overflowHide();
-    // })
 
     $('.modal__close').click(function () {
         overflowShow();
@@ -74,24 +50,20 @@ $(document).ready(function () {
     });
 
     // Отправка формы
-    $('.form').submit(function (e) {
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "send.php",
-            data: $(this).serialize(),
-            success: function () {
-                $('.modal_form').fadeOut();
-                overflowShow();
-            }
-        })
-    });
+    // $('.form').submit(function (e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "send.php",
+    //         data: $(this).serialize(),
+    //         success: function () {
+    //             $('.modal_form').fadeOut();
+    //             overflowShow();
+    //         }
+    //     })
+    // });
 
     // Маска
-    jQuery(function ($) {
-        $('.mask_phone').mask('(999) 999-9999');
-    });
-
     $('.form__field').each(function() {
         if($(this).val() != '') {
             $(this).addClass('form__field_active')

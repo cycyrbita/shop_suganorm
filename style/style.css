@@ -40,8 +40,8 @@
     width: 50%;
     padding-right: 30px;
     color: #ff7c83;
-    line-height: 1;
-    font-size: 134px;
+    line-height: .9;
+    font-size: 100px;
 }
 
 .introFace mark {
@@ -562,6 +562,7 @@
 .footer__nav {
     display: flex;
     margin-right: -15px;
+    margin-left: -15px;
 }
 
 .footer__item+.footer__item {
@@ -594,7 +595,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
     margin-top: 30px;
 }
 
@@ -613,7 +613,7 @@
 
 .footer__messangers {
     display: flex;
-    margin-left: 180px;
+    margin-left: 80px;
     flex: 0 0 auto;
 }
 
@@ -1068,10 +1068,13 @@
 .delivery__info {
     width: 100%;
     word-wrap: break-word;
+    color: #2d2d2d;
 }
 
 .delivery__info_title {
     font-weight: 700;
+    color: #000000;
+    font-size: 16px !important;
 }
 
 .pay {
@@ -1393,6 +1396,7 @@
     background-color: #000;
     border: 0;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 @media (max-width: 1280px) {
@@ -1486,7 +1490,7 @@
     }
 
     .footer__messangers {
-        margin-left: auto;
+        margin-left: 30px;
     }
 
     .face__body {
@@ -1634,7 +1638,7 @@
     }
 
     .introFace__title {
-        font-size: 82px;
+        font-size: 70px;
     }
 
     .introFace__title span {
@@ -1847,7 +1851,8 @@
     }
 
     .introFace__title {
-        font-size: 70px;
+        font-size: 58px;
+        text-align: center;
     }
 
     .introFace__title span {
@@ -1980,7 +1985,6 @@
 
     .footer__nav {
         width: 100%;
-        margin-left: -15px;
         flex-wrap: wrap;
     }
 
@@ -1989,7 +1993,8 @@
     }
 
     .footer__bottom {
-        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
         margin-top: 20px;
     }
 
@@ -2003,12 +2008,14 @@
 
     .footer__messangers {
         margin-bottom: 20px;
-        width: 100%;
         order: 1;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .footer__info {
-        margin-right: 25px;
+        margin-right: 0;
+        margin-left: 0;
         margin-bottom: 10px;
     }
 
@@ -2199,6 +2206,7 @@
 
     .introFace__title {
         text-align: center;
+        font-size: 28px;
     }
 
     .introFace__media {
